@@ -1,8 +1,11 @@
-# React + Vite
+# Coalition Technologies Skills Test - Healthcare Dashboard
+It is a dynamic web application that allows users to interact with and visualize patient data through charts, lists, and detailed reports. The application demonstrates proficiency in frontend development, API integration, and UI design.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Technologies Used:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Frontend Framework: **React.js**
+- Styling: **Tailwind CSS**
+- Charting Library: **Chart.js**
+- HTTP Requests: **Fetch**
+- State Management: **React's useState and useEffect hooks**
+- Version Control: **Git**

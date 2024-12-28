@@ -19,19 +19,22 @@ const NavItems = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-16 rounded-full bg-white px-8 py-3 flex justify-between items-center font-bold text-xs lg:text-sm">
-      <div id="logo" className="w-44 cursor-pointer">
+    <nav className="w-full md:h-16 h-10 rounded-full bg-white md:px-8 px-4 py-3 flex justify-between items-center font-bold overflow-scroll">
+      {/* Logo */}
+      <div id="logo" className="md:w-44 w-36 cursor-pointer">
         <img
           className="h-full w-full object-cover"
           src="/Images/TestLogo.svg"
           alt="Company's logo"
         />
       </div>
-      <div id="options" className="h-9 flex gap-x-6">
+
+      {/* Options */}
+      <div id="options" className="flex md:gap-x-6 gap-x-2">
         {NavItems.map((item) => (
           <div
             key={item.text}
-            className="flex items-center gap-2 hover:bg-[#01F0D0] cursor-pointer px-3.5 rounded-full transition-colors duration-300 ease-in-out"
+            className="flex text-xs lg:text-sm items-center md:gap-2 gap-1 hover:bg-[#01F0D0] cursor-pointer px-3.5 rounded-full transition-colors duration-300 ease-in-out"
           >
             <img src={item.icon} alt={`${item.text} icon`} />
             {item.text}

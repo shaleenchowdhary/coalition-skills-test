@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div id="app-container">
       <Navbar />
-      {/* <MainContent patients={patients} /> */}
+      <MainContent patients={patients} />
     </div>
   );
 }

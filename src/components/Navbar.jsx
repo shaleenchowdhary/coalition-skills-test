@@ -19,7 +19,7 @@ const NavItems = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full md:h-16 h-10 rounded-full bg-white md:px-8 px-4 py-3 flex justify-between items-center font-bold overflow-scroll">
+    <nav className="w-full md:h-16 rounded-full bg-white md:px-8 px-2 py-3 flex justify-between items-center font-bold gap-x-1">
       {/* Logo */}
       <div id="logo" className="md:w-44 w-36 cursor-pointer">
         <img
@@ -30,7 +30,7 @@ const Navbar = () => {
       </div>
 
       {/* Options */}
-      <div id="options" className="flex md:gap-x-6 gap-x-2">
+      <div id="options" className="hidden lg:flex h-full md:gap-x-6 gap-x-2">
         {NavItems.map((item) => (
           <div
             key={item.text}
@@ -41,11 +41,13 @@ const Navbar = () => {
           </div>
         ))}
       </div>
+
+      {/* Doctor Info */}
       <div
         id="doc-info"
-        className="h-full flex items-center justify-center gap-x-2"
+        className="h-full text-xs flex items-center justify-center gap-x-1 md:gap-x-2"
       >
-        <div className="h-12 w-12 rounded-full">
+        <div className="lg:h-12 lg:w-12 h-9 w-9 rounded-full">
           <img
             className="h-full w-full object-contain cursor-pointer"
             src="/Images/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png"
@@ -57,14 +59,14 @@ const Navbar = () => {
           <div className="designation font-normal">General Practitioner</div>
         </div>
         <div className="flex ml-2">
-          <div className="h-5 w-5 cursor-pointer">
+          <div className="lg:h-5 h-4 w-4 lg:w-5 cursor-pointer">
             <img
               className="h-full w-full object-contain"
               src="/Images/settings_FILL0_wght300_GRAD0_opsz24.svg"
               alt="settings icon"
             />
           </div>
-          <div className="h-5 w-5 cursor-pointer">
+          <div className="lg:h-5 h-4 w-4 lg:w-5 cursor-pointer">
             <img
               className="h-full w-full object-contain"
               src="/Images/more_vert_FILL0_wght300_GRAD0_opsz24.svg"

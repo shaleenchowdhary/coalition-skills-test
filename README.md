@@ -8,4 +8,4 @@ It is a dynamic web application that allows users to interact with and visualize
 - Charting Library: **Chart.js**
 - HTTP Requests: **Fetch**
 - State Management: **React's useState and useEffect hooks**
-- Version Control: **Git**
+
